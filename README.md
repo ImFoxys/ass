@@ -126,6 +126,13 @@ h1 {
 
 input[type=checkbox]:checked {
     @addClass('checked', 'Another', 'Another to...') ## Add a class when
+    @removeClass('unchecked') ## Remove classes
+}
+
+div {
+    height: @randomNumber(100, 500)px; ## Random number between 100 and 500 convert in unit
+    width: @randomUnit(px, 100, 500); ## Random size between 100 and 500
+    color: @randomColor(); ## Random color
 }
 ```
 
